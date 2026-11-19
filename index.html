@@ -1,15 +1,87 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First Landing | UFPSO</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-   <section class=""loading>
-    Welcome to first HTML class
-    <span class="loading_author"> - Your friends at UFPSO</span class="loading_anim"></span>
 
-   </section>
+<body>
+    <!-- PANTALLA DE CARGA -->
+    <div id="loader" class="loader">
+        <section class="loading" role="status">
+            <h2>Welcome to my website</h2>
+            <span class="loading__author">Your friends at UFPSO</span>
+            <span class="loading__anim" aria-hidden="true"></span>
+        </section>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="website" class="website" inert>
+
+        <header class="header">
+            <nav class="navbar container">
+                <a href="#home" class="logo">
+                    UFPSO<span>.dev</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- HERO -->
+            <section id="home" class="hero">
+                <div class="container hero-content">
+                    <span class="subtitle">Learning web development</span>
+                    <h1>Build something <span>amazing.</span></h1>
+                    <p>Welcome to my website! I'm excited to share my journey in web development with you.</p>
+
+                    <a href="#services" class="btn">Explore Services</a>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="about" class="about">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>I'm a passionate web developer with experience in creating responsive and user-friendly websites.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CARDS -->
+            <section id="services" class="services">
+                <article class="card">
+                    <span class="card-icon">🎨</span>
+                    <h3>Web Design</h3>
+                    <p>I create visually appealing and intuitive web designs that enhance user experience.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-icon">💻</span>
+                    <h3>CSS</h3>
+                    <p>I create beautiful and responsive styles for websites using modern CSS techniques.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-icon">⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>I develop interactive and dynamic web applications using JavaScript and its frameworks.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 UFPSO. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
-</html>
